@@ -23,7 +23,7 @@ Kusto Query Language (KQL) is a powerful query language used in Azure Monitor, M
 1. **Clone this repository to your local machine:**
 
     ```bash
-    git clone https://github.com/YourUsername/KQL.git
+    git clone https://github.com/Najadvk/KQL.git
     ```
 
     Replace `YourUsername` with your GitHub username.
