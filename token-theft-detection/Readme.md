@@ -8,7 +8,6 @@ Welcome to the repository of Kusto Query Language (KQL) scripts designed for det
 
 This repo contains curated KQL queries that help security analysts and incident responders detect suspicious activities such as token theft, unauthorized OAuth usage, and other identity-related threats.
 
-Queries are designed for use with Microsoft Sentinel, Azure Monitor, or directly in Entra ID sign-in logs.
 
 ---
 
