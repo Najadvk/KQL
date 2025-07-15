@@ -1,20 +1,34 @@
-# Suspicious Token Usage Detection – Entra ID (KQL)
+# KQL Queries for Security Monitoring
 
-This query detects suspicious OAuth token activity by legitimate Microsoft apps like Visual Studio Code and the Microsoft Authentication Broker. These apps are often implicitly trusted and may be exploited post-compromise using stolen refresh tokens.
+Welcome to the repository of Kusto Query Language (KQL) scripts designed for detecting and investigating security incidents in Microsoft Entra ID (Azure AD) and related Microsoft 365 environments.
 
-##  Why This Matters
+---
 
-Attackers can bypass MFA and Conditional Access policies using refresh tokens with trusted apps, evading detection and accessing sensitive resources like Microsoft Graph or device registration.
+## About
 
-## Detection Logic
+This repo contains curated KQL queries that help security analysts and incident responders detect suspicious activities such as token theft, unauthorized OAuth usage, and other identity-related threats.
 
-- Filters only successful sign-ins (`ResultType == 0`)
-- Focuses on member accounts (`UserType == "Member"`)
-- Flags unusual usage of:
-  - Device Registration Service via the Authentication Broker (`adrs_access`)
-  - Microsoft Graph access via VS Code
+Queries are designed for use with Microsoft Sentinel, Azure Monitor, or directly in Entra ID sign-in logs.
 
-##  Use Case
+---
 
-Use this query in Microsoft Sentinel or Entra ID workbooks to monitor for token misuse patterns that may indicate lateral movement, persistence, or stealthy exfiltration.
+## Current Queries
 
+### Suspicious Token Usage Detection
+
+Detects suspicious OAuth token usage by trusted first-party applications like the Microsoft Authentication Broker and Visual Studio Code.
+
+- Identifies use of refresh tokens with unusual scopes.
+- Focuses on successful sign-ins by member accounts.
+- Flags potentially malicious token abuse that could indicate lateral movement or persistence.
+
+> See [`Suspicious_Token_Usage_Detection.md`](./Suspicious_Token_Usage_Detection.md) for the full query and explanation.
+
+---
+
+## How to Use
+
+1. Clone this repository:
+
+```bash
+git clone https://github.com/YourUsername/KQL.git
