@@ -25,9 +25,3 @@ Detects suspicious OAuth token usage by trusted first-party applications like th
 
 ---
 
-## How to Use
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/YourUsername/KQL.git
