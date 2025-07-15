@@ -16,7 +16,7 @@ Attackers can bypass MFA and Conditional Access policies using refresh tokens wi
 
 ##  Use Case
 
-Use this query in Microsoft Sentinel or Entra ID workbooks to monitor for token misuse patterns that may indicate lateral movement, persistence, or stealthy exfiltration.
+Use this query in Microsoft Sentinel/Defender  to monitor for token misuse patterns that may indicate lateral movement, persistence, or stealthy exfiltration.
 
 
 
