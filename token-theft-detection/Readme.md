@@ -6,7 +6,7 @@ Welcome to the repository of Kusto Query Language (KQL) scripts designed for det
 
 ## About
 
-This repo contains curated KQL queries that help security analysts and incident responders detect suspicious activities such as token theft, unauthorized OAuth usage, and other identity-related threats.
+This repo contains curated KQL queries that help security analysts and incident responders detect suspicious activities such as device registration, unauthorized OAuth usage, and Microsoft Graph API usage.
 
 
 ---
